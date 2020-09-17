@@ -11,10 +11,15 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
+    private Square backsun;
+    //private Square wall;
+    //private Square window;
+    private Triangle grass1;
+    private Triangle grass2;
+    private Triangle grass3;
+    private Triangle grass4;
     private Circle sun;
+    private Person guy;
     private boolean drawn;
 
     /**
@@ -22,9 +27,15 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
+        //wall = new Square();
+        //window = new Square();
+        //roof = new Triangle(); 
+        grass1 = new Triangle();
+        grass2 = new Triangle();
+        grass3 = new Triangle();
+        grass4 = new Triangle();
+        guy = new Person();
+        backsun = new Square (); 
         sun = new Circle();
         drawn = false;
     }
@@ -35,28 +46,47 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.changeColor("blue");
-            wall.makeVisible();
+            backsun.moveHorizontal(230);
+            backsun.moveVertical(80);
+            backsun.changeSize(100);
+            backsun.changeColor("red");
+            backsun.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
-    
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-    
             sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
+            sun.moveHorizontal(230);
+            sun.moveVertical(90);
+            sun.changeSize(100);
             sun.makeVisible();
+    
+            guy.changeSize(60, 30);
+            guy.moveHorizontal(280);
+            guy.moveVertical(190);
+            guy.changeColor("black");
+            guy.makeVisible();
+    
+            grass1.changeColor("green");
+            grass1.moveHorizontal(220);
+            grass1.moveVertical(180);
+            grass1.changeSize(50, 40);
+            grass1.makeVisible();
+            
+            grass2.changeColor("green");
+            grass2.moveHorizontal(240);
+            grass2.moveVertical(180);
+            grass2.changeSize(50, 40);
+            grass2.makeVisible();
+            
+            grass3.changeColor("green");
+            grass3.moveHorizontal(340);
+            grass3.moveVertical(180);
+            grass3.changeSize(50, 40);
+            grass3.makeVisible();
+            
+            grass4.changeColor("green");
+            grass4.moveHorizontal(320);
+            grass4.moveVertical(180);
+            grass4.changeSize(50, 40);
+            grass4.makeVisible();
             drawn = true;
         }
     }
@@ -66,9 +96,15 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
+        //wall.changeColor("black");
+        //window.changeColor("white");
+        //roof.changeColor("black");
+        grass1.changeColor("black");
+        grass2.changeColor("black");
+        grass3.changeColor("black") ;
+        grass4.changeColor("black") ;
+        guy.changeColor("white");
+        backsun.changeColor("white");
         sun.changeColor("black");
     }
 
@@ -77,9 +113,15 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
+        //wall.changeColor("red");
+        //window.changeColor("black");
+        //roof.changeColor("green");
         sun.changeColor("yellow");
+        grass1.changeColor("green");
+        grass2.changeColor("green");
+        grass3.changeColor("green") ;
+        grass4.changeColor("green") ;
+        guy.changeColor("black");
+        backsun.changeColor("red");
     }
 }
