@@ -46,45 +46,45 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            backsun.moveHorizontal(230);
-            backsun.moveVertical(80);
+            backsun.moveHorizontal(-30);
+            backsun.moveVertical(5);
             backsun.changeSize(100);
             backsun.changeColor("red");
             backsun.makeVisible();
             
             sun.changeColor("yellow");
-            sun.moveHorizontal(230);
-            sun.moveVertical(90);
+            sun.moveHorizontal(50);
+            sun.moveVertical(30);
             sun.changeSize(100);
             sun.makeVisible();
     
             guy.changeSize(60, 30);
-            guy.moveHorizontal(280);
-            guy.moveVertical(190);
+            guy.moveHorizontal(50);
+            guy.moveVertical(5);
             guy.changeColor("black");
             guy.makeVisible();
     
             grass1.changeColor("green");
-            grass1.moveHorizontal(220);
-            grass1.moveVertical(180);
+            grass1.moveHorizontal(80);
+            grass1.moveVertical(70);
             grass1.changeSize(50, 40);
             grass1.makeVisible();
             
             grass2.changeColor("green");
-            grass2.moveHorizontal(240);
-            grass2.moveVertical(180);
+            grass2.moveHorizontal(100);
+            grass2.moveVertical(70);
             grass2.changeSize(50, 40);
             grass2.makeVisible();
             
             grass3.changeColor("green");
-            grass3.moveHorizontal(340);
-            grass3.moveVertical(180);
+            grass3.moveHorizontal(150);
+            grass3.moveVertical(70);
             grass3.changeSize(50, 40);
             grass3.makeVisible();
             
             grass4.changeColor("green");
-            grass4.moveHorizontal(320);
-            grass4.moveVertical(180);
+            grass4.moveHorizontal(170);
+            grass4.moveVertical(70);
             grass4.changeSize(50, 40);
             grass4.makeVisible();
             drawn = true;
