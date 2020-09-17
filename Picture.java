@@ -99,13 +99,16 @@ public class Picture
         //wall.changeColor("black");
         //window.changeColor("white");
         //roof.changeColor("black");
+        backsun.changeColor("white");
+        sun.changeColor("black");
+        guy.changeColor("white");
         grass1.changeColor("black");
         grass2.changeColor("black");
         grass3.changeColor("black") ;
         grass4.changeColor("black") ;
-        guy.changeColor("white");
-        backsun.changeColor("white");
-        sun.changeColor("black");
+        
+       
+        
     }
 
     /**
@@ -116,12 +119,14 @@ public class Picture
         //wall.changeColor("red");
         //window.changeColor("black");
         //roof.changeColor("green");
+        backsun.changeColor("red");
         sun.changeColor("yellow");
+        guy.changeColor("black");
         grass1.changeColor("green");
         grass2.changeColor("green");
         grass3.changeColor("green") ;
         grass4.changeColor("green") ;
-        guy.changeColor("black");
-        backsun.changeColor("red");
+        
+        
     }
 }
